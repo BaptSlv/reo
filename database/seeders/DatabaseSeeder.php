@@ -16,13 +16,16 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(10)->create();
         \App\Models\Team::factory(10)->create();
         $this->call([
-            //UserTeamSeeder::class,
+            UserTeamSeeder::class,
             ModuleSeeder::class,
-            //ModuleTeamSeeder::class,
-            //PropertySeeder::class,
-            //PropertyTeamSeeder::class,
-            //CostSeeder::class,
-            //CostPropertySeeder::class,
+            ModuleTeamSeeder::class,
+            PropertySeeder::class,
+            PropertyTeamSeeder::class,
+            CostSeeder::class,
+            CostPropertySeeder::class,
+            ChatSeeder::class,
+            ChatUserSeeder::class,
+            MessageSeeder::class
         ]);
     }
 }

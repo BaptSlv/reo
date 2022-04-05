@@ -34,5 +34,12 @@ class ModuleSeeder extends Seeder
             'namespace' => 'manager',
             'icon' => 'fas fa-cogs',
         ]);
+
+        DB::table('modules')->insert([
+            'name' => 'TeamChat',
+            'description' => 'TeamChat help you to communicate with your team members. Use the default team teamchat or create custom chats.',
+            'namespace' => 'teamchat',
+            'icon' => 'fas fa-comments',
+        ]);
     }
 }

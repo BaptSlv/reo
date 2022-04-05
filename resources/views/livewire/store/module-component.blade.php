@@ -32,8 +32,10 @@
                                             @lang('store/module.organizer.description')
                                         @elseif($module->namespace === 'manager')
                                             @lang('store/module.manager.description')
-                                        @else
+                                        @elseif($module->namespace === 'simulator')
                                             @lang('store/module.simulator.description')
+                                        @else
+                                            @lang('store/module.teamchat.description')
                                         @endif
                                     </div>
                                     <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">

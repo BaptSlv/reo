@@ -51,4 +51,9 @@ class Team extends JetstreamTeam
     {
         return $this->belongsToMany(Property::class);
     }
+
+    public function chats()
+    {
+        return $this->hasMany(Chat::class);
+    }
 }

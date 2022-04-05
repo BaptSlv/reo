@@ -30,8 +30,20 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         return view('simulator');
     })->name('simulator');
 
+    Route::get('/manager', function () {
+        return view('manager');
+    })->name('manager');
 
 
+    // Créer le middleware pour ne pas accéder à /moduleName si le module n'est pas activé.
+    Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+        Route::get('/teamchat', function () {
+            return view('teamchat');
+        })->name('teamchat');
+    });
+
+
+    // Créer le middleware pour ne pas accéder à /moduleName si le module n'est pas activé.
     Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::get('/organizer', function () {
             return view('organizer');
@@ -46,8 +58,4 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
             return view('organizer');
         })->name('organizer.edit-property');
     });
-
-    Route::get('/manager', function () {
-        return view('manager');
-    })->name('manager');
 });

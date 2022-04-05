@@ -33,10 +33,10 @@ class EditCost extends Component
 
     public function editCost()
     {
-        $coucou = $this->validate();
+        $validatedData = $this->validate();
 
         $this->cost->update([
-            'type' => $coucou['type']
+            'type' => $validatedData['type']
         ]);
 
         $this->emitUp( 'costEdited', $this->cost->id);

@@ -16,5 +16,8 @@ return [
     'manager' => [
         'description' => 'Le Manager vous aide à piloter votre parc immobilier. Configurez chaque bien que vous louez pour calculer vos rentes et accéder à bien d’autres fonctionnalités !',
     ],
+    'teamchat' => [
+        'description' => 'TeamChat vous aide à communiquer avec votre équipe. Utilisez le salon d’équipe par défaut ou créez vos propres salons personnalisés.',
+    ],
 
 ];

@@ -31,5 +31,6 @@
         </div>
         @stack('modals')
         @livewireScripts
+        <script src="{{ mix('js/backoffice/app.js') }}" defer></script>
     </body>
 </html>

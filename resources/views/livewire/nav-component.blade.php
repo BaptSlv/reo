@@ -4,7 +4,6 @@
             <button class="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent" type="button" onclick="toggleNavbar('example-collapse-sidebar')">
                 <i class="fas fa-bars"></i>
             </button>
-            <img src="{{ asset('images/text_logo.png') }}" alt="logo">
             <a class="hidden md:block pb-2 mr-0 inline-block whitespace-nowrap text-sm p-4 px-0" href="{{ route('welcome') }}">
                 <img src="{{ asset('images/logo_text.png') }}" alt="logo">
             </a>
